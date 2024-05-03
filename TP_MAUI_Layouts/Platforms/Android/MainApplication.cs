@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Släng
+namespace TP_MAUI_Layouts
 {
     [Application]
     public class MainApplication : MauiApplication

@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Släng
+namespace TP_MAUI_Layouts
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

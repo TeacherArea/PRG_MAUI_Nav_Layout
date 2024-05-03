@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP_MAUI_Layouts.VerticalStackLayout"
+             Title="VerticalStackLayout">
+    <ScrollView>
+    <VerticalStackLayout x:Name="verticalStackLayout">
+        <Button 
+            Text="Back"
+            x:Name="BackButton"
+            Clicked="ButtonGoBack_Click"
+            Margin="20"/>
+        
+        <Label 
+            Text="Verticalmainiac!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="30"
+            Margin="40"/>
+            <ScrollView Orientation="Horizontal">
+            <HorizontalStackLayout>
+                <Label
+                    Text="Ordinarie label 1"
+                    BackgroundColor="Black"
+                    Padding="10"
+                    Margin="5"
+                    TextColor="GhostWhite"/>
+                <Label
+                    Text="Ordinarie label 2"
+                    BackgroundColor="Black"
+                    Padding="10"
+                    Margin="5"
+                    TextColor="GhostWhite"/>
+                <Label
+                    Text="Ordinarie label 3"
+                    BackgroundColor="Black"
+                    Padding="10"
+                    Margin="5"
+                    TextColor="GhostWhite"/>
+                <Label
+                    Text="Ordinarie label 4"
+                    BackgroundColor="Black"
+                    Padding="10"
+                    Margin="5"
+                    TextColor="GhostWhite"/>
+                <Label
+                    Text="Ordinarie label 5"
+                    BackgroundColor="Black"
+                    Padding="10"
+                    Margin="5"
+                    TextColor="GhostWhite"/>
+                <Label
+                    Text="Ordinarie label 6"
+                    BackgroundColor="Black"
+                    Padding="10"
+                    Margin="5"
+                    TextColor="GhostWhite"/>
+                <Label
+                    Text="Ordinarie label 7"
+                    BackgroundColor="Black"
+                    Padding="10"
+                    Margin="5"
+                    TextColor="GhostWhite"/>
+                </HorizontalStackLayout>
+            </ScrollView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

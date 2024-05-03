@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TP_MAUI_Layouts.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TP_MAUI_Layouts"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent Title="Stack" Icon="icon_home.png" Route="Stacklayout" ContentTemplate="{DataTemplate local:StackLayout}" />
+        <ShellContent Title="Grid" Icon="icon_home.png" Route="Gridlayout" ContentTemplate="{DataTemplate local:GridLayout}" />
+        <ShellContent Title="Flex" Icon="icon_first.png" Route="FlexLayout" ContentTemplate="{DataTemplate local:FlexLayout}" />
+        <ShellContent Title="Absolute" Icon="icon_first.png" Route="AbsoluteLayout" ContentTemplate="{DataTemplate local:AbsoluteLayout}" />
+    </TabBar>
+
+</Shell>

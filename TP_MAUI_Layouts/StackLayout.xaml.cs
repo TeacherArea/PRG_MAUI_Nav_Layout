@@ -1,15 +1,15 @@
-﻿namespace Släng
+﻿namespace TP_MAUI_Layouts
 {
-    public partial class MainPage : ContentPage
+    public partial class StackLayout : ContentPage
     {
         int count = 0;
 
-        public MainPage()
+        public StackLayout()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnCounter_Clicked(object sender, EventArgs e)
         {
             count++;
 
@@ -19,6 +19,11 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+        }
+
+        private void ButtonVerticalStackLayout_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new VerticalStackLayout());
         }
     }
 }

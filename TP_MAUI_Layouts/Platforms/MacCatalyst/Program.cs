@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace Släng
+namespace TP_MAUI_Layouts
 {
     public class Program
     {

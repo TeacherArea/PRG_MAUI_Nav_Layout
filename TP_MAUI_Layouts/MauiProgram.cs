@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Släng
+namespace TP_MAUI_Layouts
 {
     public static class MauiProgram
     {
@@ -16,7 +16,7 @@ namespace Släng
                 });
 
 #if DEBUG
-		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

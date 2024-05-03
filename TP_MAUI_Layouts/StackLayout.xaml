@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Släng.MainPage">
+             x:Class="TP_MAUI_Layouts.StackLayout"
+             Title="StackLayout">
 
     <ScrollView>
-        <VerticalStackLayout
+        <StackLayout
             Spacing="25"
             Padding="30,0"
-            VerticalOptions="Center">
+            BackgroundColor="LightGray"
+            VerticalOptions="Start">
 
             <Image
                 Source="dotnet_bot.png"
@@ -16,15 +18,15 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, World!"
+                Text="Hello Stack!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Some excercise on MAUI layouts!"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.Description="Some different layouts"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
@@ -32,21 +34,18 @@
                 x:Name="CounterBtn"
                 Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                Clicked="OnCounter_Clicked"
+                 />
+            <HorizontalStackLayout
+                Margin="0, 80, 0, 20"
+                HorizontalOptions="Center">
 
-            <HorizontalStackLayout>
-                <Button Text="Knapp 1.1" />
-                <Button Text="Knapp 1.2" />
+                <Button x:Name="ButtonVerticalStack" Text="Vertical- HorizontalStack"
+                        Clicked="ButtonVerticalStackLayout_Clicked"
+                        Margin="2"/>
             </HorizontalStackLayout>
+        </StackLayout>
 
-            <!-- Horisontell grupp: Rad 2 -->
-            <HorizontalStackLayout>
-                <Button Text="Knapp 2.1" />
-                <Button Text="Knapp 2.2" />
-            </HorizontalStackLayout>
-        </VerticalStackLayout>
-        
     </ScrollView>
 
 </ContentPage>
