@@ -7,10 +7,11 @@
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
-        <ShellContent Title="Stack" Icon="icon_home.png" Route="Stacklayout" ContentTemplate="{DataTemplate local:StackLayout}" />
-        <ShellContent Title="Grid" Icon="icon_home.png" Route="Gridlayout" ContentTemplate="{DataTemplate local:GridLayout}" />
-        <ShellContent Title="Flex" Icon="icon_first.png" Route="FlexLayout" ContentTemplate="{DataTemplate local:FlexLayout}" />
-        <ShellContent Title="Absolute" Icon="icon_first.png" Route="AbsoluteLayout" ContentTemplate="{DataTemplate local:AbsoluteLayout}" />
+        <ShellContent Title="Stack" Route="Stacklayout" ContentTemplate="{DataTemplate local:StackLayout}" />
+        <ShellContent Title="Grid" Route="Gridlayout" ContentTemplate="{DataTemplate local:GridLayout}" />
+        <ShellContent Title="Flex" Route="FlexLayout" ContentTemplate="{DataTemplate local:FlexLayout}" />
+        <ShellContent Title="Absolute" Route="AbsoluteLayout" ContentTemplate="{DataTemplate local:AbsoluteLayout}" />
+        <ShellContent Title="Controls" Route="Controls" ContentTemplate="{DataTemplate local:Controls}" />
     </TabBar>
 
 </Shell>

@@ -18,7 +18,8 @@
             FontSize="30"
             Margin="40"/>
             <ScrollView Orientation="Horizontal">
-            <HorizontalStackLayout>
+            <HorizontalStackLayout
+                Margin="20">
                 <Label
                     Text="Ordinarie label 1"
                     BackgroundColor="Black"
