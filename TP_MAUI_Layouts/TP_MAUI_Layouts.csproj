@@ -53,25 +53,25 @@
  </ItemGroup>
 
  <ItemGroup>
-   <Compile Update="GridLayout.xaml.cs">
+   <Compile Update="Pages\GridLayout.xaml.cs">
      <DependentUpon>GridLayout.xaml</DependentUpon>
    </Compile>
-   <Compile Update="StackLayout.xaml.cs">
+   <Compile Update="Pages\StackLayout.xaml.cs">
      <DependentUpon>StackLayout.xaml</DependentUpon>
    </Compile>
  </ItemGroup>
 
  <ItemGroup>
-   <MauiXaml Update="AbsoluteLayout.xaml">
+   <MauiXaml Update="Pages\AbsoluteLayout.xaml">
      <Generator>MSBuild:Compile</Generator>
    </MauiXaml>
-   <MauiXaml Update="FlexLayout.xaml">
+   <MauiXaml Update="Pages\FlexLayout.xaml">
      <Generator>MSBuild:Compile</Generator>
    </MauiXaml>
-   <MauiXaml Update="GridLayout.xaml">
+   <MauiXaml Update="Pages\GridLayout.xaml">
      <Generator>MSBuild:Compile</Generator>
    </MauiXaml>
-   <MauiXaml Update="VerticalStackLayout.xaml">
+   <MauiXaml Update="Pages\VerticalStackLayout.xaml">
      <Generator>MSBuild:Compile</Generator>
    </MauiXaml>
  </ItemGroup>

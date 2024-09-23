@@ -46,6 +46,21 @@
             </VisualStateGroupList>
         </Setter>
     </Style>
+    
+    <!-- Här har jag skapat en egen sil (Style) för knappar, och som används en gång i Grid-layouten.
+         Detta sätt är lite krångligare, men gör samtidigt att knappen fortfarande responderar korrekt
+         på "light-" vs "dark mode".
+    -->
+    <Style x:Key="CustomizedGrayButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray600}}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
+        <Setter Property="FontFamily" Value="OpenSansRegular"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Padding" Value="14,10"/>
+        <Setter Property="MinimumHeightRequest" Value="44"/>
+        <Setter Property="MinimumWidthRequest" Value="44"/>
+    </Style>
 
     <Style TargetType="CheckBox">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />

@@ -1,0 +1,57 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP_MAUI_Layouts.GridLayout"
+             Title="GridLayout">
+    <ScrollView>
+
+        <!-- Använd en vertikal layout för att inkludera både Label och Grid -->
+        <VerticalStackLayout>
+
+            <Label 
+                Text="GridMainiac!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Some different layouts"
+                FontSize="28"
+                Margin="30"/>
+
+            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                <!-- Definiera först rader och kolumner -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="wall.jpg" Grid.Row="0" Grid.Column="0" Aspect="AspectFill"/>
+                <BoxView Color="LightGray" Grid.Row="0" Grid.Column="1"/>
+                <BoxView Color="LightGray" Grid.Row="0" Grid.Column="2"/>
+
+                <BoxView Color="LightGray" Grid.Row="1" Grid.Column="0"/>
+                <BoxView Color="LightGray" Grid.Row="1" Grid.Column="1"/>
+                <Image Source="window.jpg" Grid.Row="1" Grid.Column="2" Aspect="AspectFill"/>
+
+                <BoxView Color="LightGray" Grid.Row="2" Grid.Column="0"/>
+                <Image Source="wall.jpg" Grid.Row="2" Grid.Column="1" Aspect="AspectFill"/>
+                <BoxView Color="LightGray" Grid.Row="2" Grid.Column="2"/>
+
+                <!-- Knapparna längst ner. Observera hur man skapar en egen definition 
+                     av färger för knappar i Resources/Styles/Styles.xaml och att den använder 
+                     fördefinerade färger (lägg till och/eller ta bort vid behov) i Resources/Styles/Colors.xaml -->
+                <Button Text="Stack" Clicked="GoToStack"  Grid.Row="3" Grid.Column="0" Style="{StaticResource CustomizedGrayButton}" />
+                <Button Text="Flex" Clicked="GoToFlex" Grid.Row="3" Grid.Column="1"/>
+                <Button Text="Absolute" Clicked="GoToAbsolute" Grid.Row="3" Grid.Column="2"/>
+            </Grid>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+</ContentPage>
